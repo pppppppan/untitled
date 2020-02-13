@@ -1,0 +1,227 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta content="超星,超星尔雅,智慧树,超星挂机,超星刷课,智慧树挂机,智慧树刷课,超星题库,超星答案,智慧树题库,智慧树答案,刷课软件" name="keywords" />
+<meta content="代看啦--专业代看超星尔雅、智慧树等网络课程，价格实惠，安全高分包过。" name="description" />
+<title>代看啦 | 专业代看超星尔雅、智慧树、高校邦、优学院等网络课程，价格实惠，安全高分包过。</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<link rel="stylesheet" href="/Public/layui/css/layui.css" media="all">
+<style>
+        .layui-nav{background:rgb(76,76,76);}
+        .layui-nav .layui-nav-item a:hover, .layui-nav .layui-this a{color:#5fb878;font-size:16px;}
+        .layui-nav .layui-this:after, .layui-nav-bar, .layui-nav-tree .layui-nav-itemed:after{height:0px;}
+        .layui-nav .layui-nav-item{line-height:50px;}
+        .qrcode{position:absolute;right:10px;top:300px;width:200px;}
+        </style>
+<script>
+        var _hmt = _hmt || [];
+        (function() {
+        	var hm = document.createElement("script");
+        	hm.src = "https://hm.baidu.com/hm.js?766af558954e2b7bad529e9ac2b36c75";
+        	var s = document.getElementsByTagName("script")[0];
+        	s.parentNode.insertBefore(hm, s);
+
+        })();
+        </script>
+<style type="text/css" media="all">
+        .layui-input {
+            background-color: #eee;
+            border-width: 2px;
+        }
+
+        .layui-form-label {
+            font-weight: 600;
+        }
+
+        .tips {
+            margin: 80px auto 20px;
+            text-align: center;
+            font-size: 30px;
+            font-weight: 600;
+            color: #5fb878;
+        }
+
+        .login {
+            width: 750px;
+            margin: auto;
+            padding: 20px 0px;
+            border: 3px solid #5fb878;
+            border-radius: 25px;
+        }
+    </style>
+</head>
+<body>
+<ul class="layui-nav">
+<li class="layui-nav-item"> <a href="/home/index/index.html" style="font-size:20px;color:#5fb878;">代看啦&nbsp;|&nbsp;daikanla.com</a>
+</li>
+
+
+<li class="layui-nav-item layui-this"> <a href="/home/index/student.html"><i class="layui-icon">&#xe609;&nbsp;</i>自助提交</a>
+</li>
+<li class="layui-nav-item "> <a href="/home/index/progress.html"><i class="layui-icon">&#xe615;&nbsp;</i>进度查询</a>
+</li>
+<li class="layui-nav-item "> <a href="/home/index/video.html"><i class="layui-icon">&#xe6ed;&nbsp;</i>视频回放</a>
+</li>
+<li class="layui-nav-item "> <a href="/home/index/help.html"><i class="layui-icon">&#xe607;&nbsp;</i>使用帮助</a>
+</li>
+<li class="layui-nav-item "> <a href="/home/index/news.html"><i class="layui-icon">&#xe645;&nbsp;</i>新闻公告</a>
+</li>
+<li class="layui-nav-item "> <a href="/home/index/login.html"><i class="layui-icon">&#xe612;&nbsp;</i>代理中心</a>
+</li>
+</ul>
+<div style="width:100%;height: 5px;background: #5fb878;"></div>
+<div class="tips">学生自助提交代看</div>
+<div class="login">
+<form class="layui-form">
+<div class="layui-form-item">
+<label class="layui-form-label">网课类型：</label>
+<div class="layui-input-block">
+<input type="radio" name="type" value="cx" title="超星尔雅(学习通)">
+<input type="radio" name="type" value="zhs" title="智慧树(知到)">
+ <input type="radio" name="type" value="yxy" title="优学院">
+<input type="radio" name="type" value="xty3" title="学堂云3">
+<input type="radio" name="type" value="gxb" title="高校邦">
+</div>
+</div>
+<div class="layui-form-item">
+<label class="layui-form-label">学校：</label>
+<div class="layui-input-inline">
+<input type="text" name="school" required lay-verify="required" placeholder="完整的学校名称" autocomplete="off" class="layui-input">
+</div>
+<div class="layui-form-mid layui-word-aux">如果账号为手机号，学校需留空。</div>
+</div>
+<div class="layui-form-item">
+<label class="layui-form-label">账号：</label>
+<div class="layui-input-inline">
+<input type="text" name="account" required lay-verify="required" placeholder="您的学号或手机号" autocomplete="off" class="layui-input">
+</div>
+</div>
+<div class="layui-form-item">
+<label class="layui-form-label">密码：</label>
+<div class="layui-input-inline">
+<input type="text" name="pwd" required lay-verify="required" placeholder="网络课程的密码" autocomplete="off" class="layui-input">
+</div>
+</div>
+<div class="layui-form-item">
+<label class="layui-form-label">验证码：</label>
+<div class="layui-input-inline">
+<input type="text" name="imgcode" required lay-verify="required" placeholder="验证码" autocomplete="off" class="layui-input">
+</div>
+<div class="layui-form-mid layui-word-aux">
+<img id='imgcode' style="border:0px; height:38px;margin-top:-8px;" src="/home/index/imgcode.html" alt="" /><a href="#" onclick="changeCode();" style="margin-left:10px;font-weight:600;font-size:15px;">换一张</a>
+</div>
+</div>
+<div class="layui-form-item">
+<div class="layui-input-block">
+<input type="button" class="layui-btn layui-btn-danger" value="查询课程" onclick="getCourse();">
+<button type="reset" class="layui-btn layui-btn-primary">重置</button>
+</div>
+</div>
+</form>
+</div>
+<div style="display: none">
+<form action="/home/index/course.html" method="post" id='course'>
+<input name='course'>
+</form>
+</div>
+<script src="/Public/layui/layui.all.js" charset="utf-8"></script>
+<script src="/Public/bootstrap/js/jquery-3.2.1.min.js"></script>
+<script>
+            var layer = layui.layer;
+            function showMsg(content,type){
+            	type=(typeof type !== 'undefined') ?  type : 0;
+                layer.open({
+                    title: '温馨提示',
+                    content: content,
+                    btn: ['确定'],
+                    btnAlign: 'c',
+                    icon: type,
+                });
+            }
+        </script>
+<script>
+        var form = layui.form;
+        function changeCode() {
+            var obj = document.getElementById('imgcode');
+            obj.src = "/home/index/imgcode.html" + "?" + Math.random();
+        }
+
+        function getCourse() {
+
+            var type = '';
+            var obj = document.getElementsByName('type');
+            for (var i = 0; i < obj.length; i++) {
+                if (obj[i].checked) {
+                    type = obj[i].value;
+                }
+            }
+
+            if (type == '') {
+                showMsg('请选择您的课程类型。');
+                return;
+            }
+
+            var school = document.getElementsByName('school')[0].value;
+            var account = document.getElementsByName('account')[0].value;
+            var pwd = document.getElementsByName('pwd')[0].value;
+            var imgcode = document.getElementsByName('imgcode')[0].value;
+
+            if (account == '') {
+                showMsg('账号不能为空。');
+                return;
+            }
+
+            if (pwd == '') {
+                showMsg('密码不能为空。');
+                return;
+            }
+
+            if (imgcode == '') {
+                showMsg('验证码不能为空。');
+                return;
+            }
+
+            var index = layer.load();
+
+            $.ajax({
+                url: "/home/index/mooclogin.html",
+                type: 'post',
+                timeout: 30000,
+                dataType: 'json',
+                data: {
+                    type: type,
+                    school: school,
+                    account: account,
+                    pwd: pwd,
+                    imgcode: imgcode,
+                },
+                success: function (data) {
+                    if (data.state != 1) {
+                        layer.close(index);
+                        if (data.msg == '') {
+                            data.msg = '查询失败，请稍后再试。';
+                        }
+                        showMsg(data.msg, 5);
+                        changeCode();
+                        document.getElementsByName('imgcode')[0].value = '';
+                        return;
+                    }
+
+                    document.getElementsByName('course')[0].value = data.course;
+                    $('#course').submit();
+
+                },
+                error: function (Status) {
+                    layer.close(index);
+                    showMsg('查询超时，请稍后再试。', 5);
+                    changeCode();
+                    document.getElementsByName('imgcode')[0].value = '';
+                },
+
+            })
+        }
+    </script>
+</body>
+</html>
